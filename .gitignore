@@ -1,1 +1,4 @@
 .idea/
+.coverage
+htmlcov/
+__pycache__
