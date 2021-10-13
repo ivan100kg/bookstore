@@ -1,3 +1,4 @@
+from django.contrib.auth.models import User
 from django.test import TestCase
 
 from store.models import Book
@@ -15,19 +16,24 @@ class BookSerializerTestCase(TestCase):
                 'id': book1.id,
                 'name': 'Test book 1',
                 'price': 25,
-                'author': 'Author 1'
+                'author': 'Author 1',
+                'owner': None,
             },
             {
                 'id': book2.id,
                 'name': 'Test book 2',
                 'price': 55,
-                'author': 'Author 2'
+                'author': 'Author 2',
+                'owner': None,
+
             },
             {
                 'id': book3.id,
                 'name': 'Test book 3',
                 'price': 15,
-                'author': 'Author 1'
+                'author': 'Author 1',
+                'owner': None,
+
             },
         ]
         self.assertEqual(expected_data, data)
