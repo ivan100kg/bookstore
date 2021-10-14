@@ -13,6 +13,8 @@ https://docs.djangoproject.com/en/3.2/ref/settings/
 from pathlib import Path
 
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
+import psycopg2
+
 BASE_DIR = Path(__file__).resolve().parent.parent
 
 
@@ -78,9 +80,18 @@ WSGI_APPLICATION = 'books.wsgi.application'
 # https://docs.djangoproject.com/en/3.2/ref/settings/#databases
 
 DATABASES = {
+    'OPTIONS': {
+        'isolation_level': psycopg2.extensions.ISOLATION_LEVEL_SERIALIZABLE,
+    },
     'default': {
-        'ENGINE': 'django.db.backends.sqlite3',
-        'NAME': BASE_DIR / 'db.sqlite3',
+
+        'ENGINE': 'django.db.backends.postgresql_psycopg2',
+        'NAME': 'books_db',
+        'USER': 'books_user',
+        'PASSWORD': '399',
+        'HOST': 'localhost',
+        'PORT': '',
+
     }
 }
 
