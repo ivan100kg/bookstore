@@ -1,7 +1,7 @@
 # bookstore
 
 ### Install dependencies for Linux
-For Windows to install psycopg2 instead of ~~psycopg2-binary~~
+Install psycopg2 instead of ~~psycopg2-binary~~ for Windows
 ```shell
 pip install --upgrade pip
 pip install django
