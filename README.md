@@ -26,4 +26,17 @@ ALTER ROLE myprojectuser SET timezone TO 'UTC';
 GRANT ALL PRIVILEGES ON DATABASE myproject TO myprojectuser;
 \q
 ```
+### Start migrations
+```shell
+cd books
+```
+```shell
+./manage.py migrate
+```
+### Start server
+```shell
+./manage.py runserver
+```
+### Check your browser 
+[link](http://127.0.0.1:8000/book/?format=json)
 
