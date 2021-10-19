@@ -1,7 +1,7 @@
 # bookstore
 
 ### Install dependencies for Linux
-Install psycopg2 instead of ~~psycopg2-binary~~ for Windows
+Install `psycopg2` instead of ~~psycopg2-binary~~ for `Windows`
 ```shell
 pip install --upgrade pip
 pip install django
@@ -10,7 +10,7 @@ pip install psycopg2-binary
 pip install social-auth-app-django
 pip install django-filter
 ```
-### Install postgresql for Ubuntu. For [Manjaro](https://gist.github.com/marcorichetta/af0201a74f8185626c0223836cd79cfa)
+### Install postgresql for `Ubuntu`. For [Manjaro](https://gist.github.com/marcorichetta/af0201a74f8185626c0223836cd79cfa)
 ```shell
 sudo apt update
 sudo apt install postgresql postgresql-contrib
@@ -48,5 +48,5 @@ cd books
 ### Add some books
 >[admin](http://127.0.0.1:8000/admin)
 
-and check 'books' again
+and check `books` again
 
