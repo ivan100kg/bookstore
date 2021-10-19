@@ -44,7 +44,7 @@ cd books
 ### Check your browser 
 >[books](http://127.0.0.1:8000/book/?format=json)
 ### Registrate from GitHub
-[auth](http://127.0.0.1:8000/auth)
+>[auth](http://127.0.0.1:8000/auth)
 ### Add some books
 >[admin](http://127.0.0.1:8000/admin)
 
