@@ -26,10 +26,14 @@ ALTER ROLE myprojectuser SET timezone TO 'UTC';
 GRANT ALL PRIVILEGES ON DATABASE myproject TO myprojectuser;
 \q
 ```
-### Start migrations
+### Create the administrator
 ```shell
 cd books
 ```
+```shell
+./manage.py createsuperuser
+```
+### Start migrations
 ```shell
 ./manage.py migrate
 ```
@@ -38,5 +42,9 @@ cd books
 ./manage.py runserver
 ```
 ### Check your browser 
-[link](http://127.0.0.1:8000/book/?format=json)
+>[books](http://127.0.0.1:8000/book/?format=json)
+### Add some books
+>[admin](http://127.0.0.1:8000/admin)
+
+and check 'books' again
 
