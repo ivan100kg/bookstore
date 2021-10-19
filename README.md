@@ -1,6 +1,6 @@
 # bookstore
 
-install dependencies
+install dependencies for Linux
 ```shell
 pip install django
 pip install djangorestframework
